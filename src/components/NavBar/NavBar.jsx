@@ -13,12 +13,13 @@ import {
   IoBookmarksOutline,
   IoSearchOutline,
 } from "react-icons/io5";
+import {Link} from "react-router-dom"
 export default class NavBar extends Component {
   render() {
     return (
       <Navbar  style={{paddingTop:24}}>
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand as={Link} to="/">
             <img style={{ height: 54 }} alt="medium-logo" src={logo} />
           </Navbar.Brand>
           <h5 style={{ fontWeight: "bold", marginTop: "0.6em" }}>
@@ -49,7 +50,7 @@ export default class NavBar extends Component {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">Write a story</Dropdown.Item>
+                  <Dropdown.Item as={Link} to="/new-story">Write a story</Dropdown.Item>
                   <Dropdown.Item href="#/action-2">
                    Stories
                   </Dropdown.Item>
