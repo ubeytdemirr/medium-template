@@ -5,6 +5,7 @@ import { Container, Row, Col, Nav } from "react-bootstrap";
 import ArticleListItem from "../../components/ArticleListItem/ArticleListItem";
 import { IoBookmarksOutline } from "react-icons/io5";
 import articles from "./articles.json";
+import Footer from "../../components/Footer/Footer";
 export default class Home extends Component {
   state = {
     articles: articles,
@@ -48,7 +49,7 @@ export default class Home extends Component {
             </Col>
             <Col className={"col-lg-4 "}>
               <div
-                className={"flex-column py-4 px-4"}
+                className={"flex-column py-4 px-4 w-100"}
                 style={{ backgroundColor: "rgb(250, 250, 250)" }}
               >
                 <div className={"mb-4 title"}>
@@ -60,6 +61,7 @@ export default class Home extends Component {
                   <ArticleListItem headingFont={"small"} article={article} />
                 ))}
               </div>
+              <Footer />
             </Col>
           </Row>
         </Container>
