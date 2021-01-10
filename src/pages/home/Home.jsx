@@ -6,6 +6,7 @@ import ArticleListItem from "../../components/ArticleListItem/ArticleListItem";
 import { IoBookmarksOutline } from "react-icons/io5";
 import articles from "./articles.json";
 import Footer from "../../components/Footer/Footer";
+import TagsList from "../../components/TagsList/TagsList";
 export default class Home extends Component {
   state = {
     articles: articles,
@@ -18,12 +19,15 @@ export default class Home extends Component {
             className={"row-cols-lg-3 pb-4"}
             style={{ borderBottom: "1px solid rgba(230, 230, 230, 1)" }}
           >
-            <ArticleListItem
-              article={this.state.articles[0]}
-              articleImg={"top"}
-              headingFont={"large"}
-              subheading
-            />
+            <Col>
+              <ArticleListItem
+                article={this.state.articles[0]}
+                articleImg={"top"}
+                headingFont={"large"}
+                subheading
+              />
+            </Col>
+
             <Col className={"flex-column w-100"}>
               {this.state.articles.slice(1, 5).map((article) => (
                 <ArticleListItem
@@ -34,7 +38,7 @@ export default class Home extends Component {
               ))}
             </Col>
 
-            <Col className={"mx-2"}></Col>
+            <Col className={""}>{/*<TagsList />*/}</Col>
           </Row>
           <Row className={"py-4 mt-4"}>
             <Col className={"col-lg-8 pr-5 pl-2"}>
