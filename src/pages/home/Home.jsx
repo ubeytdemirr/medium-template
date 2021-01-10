@@ -7,6 +7,7 @@ import { IoBookmarksOutline } from "react-icons/io5";
 import articles from "./articles.json";
 
 import TopicsToFollow from "../../components/TopicsToFollow/TopicsToFollow"
+import PeopleList from "../../components/PeopleList/PeopleList";
 export default class Home extends Component {
   state = {
     articles: articles,
@@ -35,7 +36,8 @@ export default class Home extends Component {
               ))}
             </Col>
 
-            <Col  >
+            <Col>
+              <PeopleList />
               <TopicsToFollow/>
             </Col>
           </Row>

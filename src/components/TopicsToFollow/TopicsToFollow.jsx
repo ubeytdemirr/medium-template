@@ -3,24 +3,22 @@ import { Row, Col, Button } from "react-bootstrap";
 import topics from "./data.json";
 export default function TopicsToFollow() {
   return (
-    <div>
-      <div style={{marginBottom:20}}>
-      <strong style={{color:"black"}}>TOPICS TO FOLLOW</strong>
-          </div>
-      {topics.map((topic) => (
-        <>
-          <Row>
-            <Col xs={10}>
-              <strong style={{color:"black"}}>{topic}</strong>
+    <div className="mt-3">
+      <div style={{ marginBottom: 20 }}>
+        <strong style={{ color: "black" }}>TOPICS TO FOLLOW</strong>
+      </div>
+      <Row>
+        {topics.map((topic) => (
+          <>
+            <Col xs={12} className="d-flex align-items-center">
+              <strong style={{ color: "black" }}>{topic}</strong>
+              <Button variant="outline-success" className="ml-auto">Follow</Button>
             </Col>
-            <Col xs={2}>
-              <Button variant="outline-success">Follow</Button>
-            </Col>
-          </Row>
-          <hr style={{ width: "110%" }} />
-        </>
-      ))}
-      <span className="text-success" style={{cursor:"pointer"}}>See More</span>
+            <hr style={{ width: "110%" }} />
+          </>
+        ))}
+      </Row>
+      <span className="text-success" style={{ cursor: "pointer" }}>See More</span>
     </div>
   );
 }
