@@ -5,6 +5,8 @@ import { Container, Row, Col, Nav } from "react-bootstrap";
 import ArticleListItem from "../../components/ArticleListItem/ArticleListItem";
 import { IoBookmarksOutline } from "react-icons/io5";
 import articles from "./articles.json";
+
+import TopicsToFollow from "../../components/TopicsToFollow/TopicsToFollow"
 export default class Home extends Component {
   state = {
     articles: articles,
@@ -33,7 +35,9 @@ export default class Home extends Component {
               ))}
             </Col>
 
-            <Col className={"mx-2"}></Col>
+            <Col  >
+              <TopicsToFollow/>
+            </Col>
           </Row>
           <Row className={"py-4 mt-4"}>
             <Col className={"col-lg-8 pr-5 pl-2"}>

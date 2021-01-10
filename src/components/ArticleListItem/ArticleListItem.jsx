@@ -13,6 +13,7 @@ class ArticleListItem extends React.Component {
         {this.props.articleImg && (
           <a>
             <img
+            alt="cover"
               className={
                 this.props.articleImg === "top" ? "img-large" : "img-small"
               }
