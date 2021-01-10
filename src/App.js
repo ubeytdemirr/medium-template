@@ -15,8 +15,7 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route
         exact
-        path="/new - story
-           "
+        path="/new-story"
         component={NewStory}
       />
       <Route exact path="/topics" component={Topics} />
