@@ -7,6 +7,7 @@ import NewStory from "./pages/new-story/NewStory"
 import Topics from './pages/topics/Topics'
 import './App.scss'
 
+import Read from "./pages/read/Read"
 function App() {
   return (
     <Router>
@@ -14,6 +15,7 @@ function App() {
       <Route exact path="/" component={Home}/>
       <Route exact path="/new-story" component={NewStory}/>
       <Route exact path="/topics" component={Topics} />
+      <Route exact path="/read/:slug" component={Read}/>
     </Router>
   );
 }
