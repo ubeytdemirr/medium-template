@@ -20,7 +20,7 @@
         .scroll-content {
             display: inherit;
             overflow-x: visible;
-            transition: all 0.4s;
+            transition: all 0.5s cubic-bezier(.49,.34,.63,.78);
             li {
                 text-transform: uppercase;
                 text-align: center;

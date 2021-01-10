@@ -39,12 +39,12 @@ export default function Reactions() {
           <IoBookmarkOutline />
         </div>
       </div>
-    
-     <div style={{marginTop:50,marginBottom:200}}>
-     <label>What are your toughts?</label>
-     <textarea style={{width:"100%",padding:20}}/>
-      <Button variant="success">Send</Button>
-     </div>
+
+      <div style={{ marginTop: 50, marginBottom: 200 }}>
+        <label>What are your thoughts?</label>
+        <textarea style={{ width: "100%", padding: 20 }} />
+        <Button variant="success">Send</Button>
+      </div>
     </>
   );
 }
