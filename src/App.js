@@ -13,12 +13,13 @@ function App() {
     <Router>
       <NavBar />
       <Route exact path="/" component={Home} />
+      <Route exact path="/new-story" component={NewStory} />
       <Route
         exact
-        path="/new-story"
-        component={NewStory}
+        path="/topics
+                           "
+        component={Topics}
       />
-      <Route exact path="/topics" component={Topics} />
     </Router>
   );
 }
