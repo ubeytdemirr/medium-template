@@ -1,6 +1,8 @@
 import React from "react";
 import { Row, Col, Button } from "react-bootstrap";
+import { Link } from 'react-router-dom'
 import topics from "./data.json";
+
 export default function TopicsToFollow() {
   return (
     <div className="mt-3">
@@ -18,7 +20,7 @@ export default function TopicsToFollow() {
           </>
         ))}
       </Row>
-      <span className="text-success" style={{ cursor: "pointer" }}>See More</span>
+      <Link to="/topics" className="text-success text-decoration-none">See More</Link>
     </div>
   );
 }

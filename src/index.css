@@ -30,6 +30,10 @@ code {
     monospace;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .vd {
   display: flex;
   width: 10;
@@ -72,3 +76,4 @@ a.dropdown-item:hover {
   background-color: inherit;
   color: black;
 }
+

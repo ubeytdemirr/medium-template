@@ -2,6 +2,7 @@ import React from "react";
 import { IoChevronBackOutline, IoChevronForwardOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import uniqid from "uniqid";
+import './styles.scss'
 
 export default class CategoriesBar extends React.Component {
   state = {
