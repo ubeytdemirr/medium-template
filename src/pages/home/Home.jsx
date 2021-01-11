@@ -8,6 +8,8 @@ import articles from "./articles.json";
 
 import TopicsToFollow from "../../components/TopicsToFollow/TopicsToFollow"
 import PeopleList from "../../components/PeopleList/PeopleList";
+import Footer from "../../components/Footer/Footer";
+import TagsList from "../../components/TagsList/TagsList";
 export default class Home extends Component {
   state = {
     articles: articles,
@@ -20,12 +22,15 @@ export default class Home extends Component {
             className={"row-cols-lg-3 pb-4"}
             style={{ borderBottom: "1px solid rgba(230, 230, 230, 1)" }}
           >
-            <ArticleListItem
-              article={this.state.articles[0]}
-              articleImg={"top"}
-              headingFont={"large"}
-              subheading
-            />
+            <Col>
+              <ArticleListItem
+                article={this.state.articles[0]}
+                articleImg={"top"}
+                headingFont={"large"}
+                subheading
+              />
+            </Col>
+
             <Col className={"flex-column w-100"}>
               {this.state.articles.slice(1, 5).map((article) => (
                 <ArticleListItem
@@ -40,6 +45,7 @@ export default class Home extends Component {
               <PeopleList />
               <TopicsToFollow/>
             </Col>
+            <Col className={""}>{/*<TagsList />*/}</Col>
           </Row>
           <Row className={"py-4 mt-4"}>
             <Col className={"col-lg-8 pr-5 pl-2"}>
@@ -54,7 +60,7 @@ export default class Home extends Component {
             </Col>
             <Col className={"col-lg-4 "}>
               <div
-                className={"flex-column py-4 px-4"}
+                className={"flex-column py-4 px-4 w-100"}
                 style={{ backgroundColor: "rgb(250, 250, 250)" }}
               >
                 <div className={"mb-4 title"}>
@@ -66,6 +72,7 @@ export default class Home extends Component {
                   <ArticleListItem headingFont={"small"} article={article} />
                 ))}
               </div>
+              <Footer />
             </Col>
           </Row>
         </Container>
