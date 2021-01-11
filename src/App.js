@@ -6,12 +6,14 @@ import Home from "./pages/home/Home";
 import NewStory from "./pages/new-story/NewStory";
 import Topics from "./pages/topics/Topics";
 import Read from "./pages/read/Read"
+import Search from "./pages/search/Search"
 
 const routes = [
   { path: "/", component: Home },
   { path: "/new-story", component: NewStory },
   { path: "/topics", component: Topics },
-  { path: "/read/:slug", component: Read }
+  { path: "/read/:slug", component: Read },
+  { path: "/search", component: Search },
 ]
 
 function App() {

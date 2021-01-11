@@ -15,7 +15,6 @@ export default class Topics extends React.Component {
           
         </Col>
       </Row>
-        {/* <Col xs={12}> */}
         {
           Object.entries(topics).map(([topic, subs]) => (
             <>
@@ -52,7 +51,6 @@ export default class Topics extends React.Component {
             </>)
           )
         }
-        {/* </Col> */}
     </Container>
   );
 }
