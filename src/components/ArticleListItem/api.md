@@ -9,4 +9,13 @@
 |subheading | true  | allows to display article subheading |
 |headingFont | 'small', <br> 'large' | makes font-size of article heading small <br> makes font-size of article heading small|
 
+### Example 
 
+`<ArticleListItem 
+                 article={article}
+                 articleImg={"top"}
+                 headingFont={"large"}
+                 subheading
+    />`
+    
+=
