@@ -31,7 +31,7 @@ export default class Home extends Component {
             <Col className={"flex-column w-100"}>
               {this.state.articles.slice(1, 5).map((article) => (
                 <ArticleListItem
-                  articleImg={"left"}
+                  articleImg={"right"}
                   headingFont={"small"}
                   article={article}
                 />
@@ -44,7 +44,7 @@ export default class Home extends Component {
             <Col className={"col-lg-8 pr-5 pl-2"}>
               {this.state.articles.slice(6).map((article) => (
                 <ArticleListItem
-                  articleImg={"left"}
+                  articleImg={"right"}
                   headingFont={"large"}
                   subheading
                   article={article}
