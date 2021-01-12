@@ -28,7 +28,7 @@ export default class NavBar extends Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
-              <Nav.Link href="#home">
+              <Nav.Link  as={Link} to="/search">
                 <IoSearchOutline style={{ fontSize: 20 }} />
               </Nav.Link>
               <Nav.Link href="#home">
@@ -51,15 +51,13 @@ export default class NavBar extends Component {
 
                 <Dropdown.Menu>
                   <Dropdown.Item as={Link} to="/new-story">Write a story</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
+                  <Dropdown.Item as={Link} to="/stories">
                    Stories
                   </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
+                  <Dropdown.Item as={Link} to="/stats">
                    Stats
                   </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                   Reading list
-                  </Dropdown.Item>
+                  
                 </Dropdown.Menu>
               </Dropdown>
             </Nav>

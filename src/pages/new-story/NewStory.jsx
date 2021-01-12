@@ -3,14 +3,18 @@ import ReactQuill from "react-quill";
 import { Container } from "react-bootstrap";
 import "react-quill/dist/quill.bubble.css";
 import { Button } from "react-bootstrap";
-import './styles.scss'
+import "./styles.scss";
+import CategoryPicker from "../../components/CategoryPicker";
 
 export default class NewStory extends Component {
   state = {
     html: "",
   };
   editor = React.createRef();
-  onChange = (html) => this.setState({ html });
+  onChange = (html) => {
+    this.setState({ html })
+    console.log(html)
+  };
   onKeyDown = (e) => {
     if (e.key === "Enter") {
       e.preventDefault();
@@ -21,11 +25,15 @@ export default class NewStory extends Component {
     const { html } = this.state;
     return (
       <Container className="new-story-container" expand="md">
+        <div className="category-container">
+        <CategoryPicker onChange={(topic)=>{console.log(topic)}} />
+        </div>
         <input
           onKeyDown={this.onKeyDown}
           placeholder="Title"
           className="article-title-input"
         />
+
         <ReactQuill
           modules={NewStory.modules}
           formats={NewStory.formats}
@@ -35,7 +43,15 @@ export default class NewStory extends Component {
           onChange={this.onChange}
           placeholder="Tell your story..."
         />
-        <Button variant="success" className="post-btn">Post</Button>
+        <input
+          onKeyDown={this.onKeyDown}
+          placeholder="Cover link e.g : https://picsum.photos/800"
+          className="article-cover-input"
+        />
+       
+        <Button variant="success" className="post-btn">
+          Post
+        </Button>
       </Container>
     );
   }

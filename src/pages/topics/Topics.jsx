@@ -3,7 +3,7 @@ import { Container, Row, Button, Col, Card } from "react-bootstrap";
 import CategoriesBar from "../../components/CategoriesBar/CategoriesBar";
 import './styles.scss'
 
-import topics from './topics.json'
+import topics from './data'
 
 export default class Topics extends React.Component {
   render = () => (

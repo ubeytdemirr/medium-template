@@ -6,6 +6,7 @@ class ArticleItemDetails extends React.Component {
       <div className={"pr-3"}>
         <div className={"d-flex align-center mb-2"}>
           <img
+          alt="cover"
             style={{ width: "20px", height: "20px" }}
             src={
               "https://miro.medium.com/fit/c/20/20/1*xF11-TSkpJSCgLc75f-DFw.jpeg"
@@ -13,12 +14,12 @@ class ArticleItemDetails extends React.Component {
           />
 
           <span className={"author"}>
-            <a>
+            <a href="/">
               <b>{this.props.article.author} </b> in <b>Better Advice</b>
             </a>
           </span>
         </div>
-        <a>
+        <a href="/">
           <span
             className={"heading"}
             style={{
@@ -33,7 +34,7 @@ class ArticleItemDetails extends React.Component {
         {this.props.subheading && (
           <div className={"subheading"}>
             <p>
-              <a>{this.props.article.subHead}</a>
+              <a href="/">{this.props.article.subHead}</a>
             </p>
           </div>
         )}

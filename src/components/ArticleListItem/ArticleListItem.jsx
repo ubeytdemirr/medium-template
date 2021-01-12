@@ -11,7 +11,7 @@ class ArticleListItem extends React.Component {
       >
         <ArticleItemDetails {...this.props} />
         {this.props.articleImg && (
-          <a>
+          <a href="/">
             <img
             alt="cover"
               className={

@@ -1,15 +1,14 @@
 import React, { Component } from "react";
-import "./styles.scss";
-import { Container, Row, Col, Nav } from "react-bootstrap";
-
-import ArticleListItem from "../../components/ArticleListItem/ArticleListItem";
+import { Col, Container, Row } from "react-bootstrap";
 import { IoBookmarksOutline } from "react-icons/io5";
-import articles from "./articles.json";
-
-import TopicsToFollow from "../../components/TopicsToFollow/TopicsToFollow"
-import PeopleList from "../../components/PeopleList/PeopleList";
+import ArticleListItem from "../../components/ArticleListItem/ArticleListItem";
 import Footer from "../../components/Footer/Footer";
-import TagsList from "../../components/TagsList/TagsList";
+import PeopleList from "../../components/PeopleList/PeopleList";
+import TopicsToFollow from "../../components/TopicsToFollow/TopicsToFollow";
+import articles from "./articles.json";
+import "./styles.scss";
+
+
 export default class Home extends Component {
   state = {
     articles: articles,
