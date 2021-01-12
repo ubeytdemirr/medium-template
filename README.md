@@ -1,5 +1,12 @@
 # Medium Template
 
+# Start
+
+- Click use this template button and create a clone repository on your github
+- Clone repository to your local machine
+- Run npm install to add dependencies
+- Start developing
+
 # Colors
 
 ```css
