@@ -1,10 +1,10 @@
 [
   {
     "_id": "string",
-    "headLine": "A 2021 Roadmap to Learning React  ",
-    "subHead": "All the things you need to know to go from beginner to expert",
+    "headLine": "My hate level of redux : I created new library",
+    "subHead": "If you have been using recoil for a while, you might have faced it: outside React Components, it's not possible to get or update values from atoms. This Typescript implementation relying on RxJS will workaround this issue and let you do so.",
     "content": "string",
-    "author": "Michael Chi",
+    "author": "Luis Antonio Canettoli Ordoñez",
     "cover": "https://miro.medium.com/fit/c/376/282/1*LhEgzn_fJ2KmBc8Ld7mEfA.png",
     "createdAt": "",
     "updatedAt": ""

@@ -5,6 +5,9 @@ import { Container, Row, Col, Nav } from "react-bootstrap";
 import ArticleListItem from "../../components/ArticleListItem/ArticleListItem";
 import { IoBookmarksOutline } from "react-icons/io5";
 import articles from "./articles.json";
+
+import TopicsToFollow from "../../components/TopicsToFollow/TopicsToFollow"
+import PeopleList from "../../components/PeopleList/PeopleList";
 import Footer from "../../components/Footer/Footer";
 import TagsList from "../../components/TagsList/TagsList";
 export default class Home extends Component {
@@ -38,6 +41,10 @@ export default class Home extends Component {
               ))}
             </Col>
 
+            <Col>
+              <PeopleList />
+              <TopicsToFollow/>
+            </Col>
             <Col className={""}>{/*<TagsList />*/}</Col>
           </Row>
           <Row className={"py-4 mt-4"}>

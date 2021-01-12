@@ -5,7 +5,7 @@ class ArticleListItem extends React.Component {
   render() {
     return (
       <div
-        className={`w-100 d-flex  justify-content-between align-start  pb-4 ${
+        className={`w-100 d-flex mb-auto justify-content-between align-start  pb-4 ${
           this.props.articleImg === "top" && "flex-column-reverse"
         }`}
       >
@@ -13,6 +13,7 @@ class ArticleListItem extends React.Component {
         {this.props.articleImg && (
           <a>
             <img
+            alt="cover"
               className={
                 this.props.articleImg === "top" ? "img-large" : "img-small"
               }

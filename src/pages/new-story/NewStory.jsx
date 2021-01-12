@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import ReactQuill from "react-quill";
 import { Container } from "react-bootstrap";
 import "react-quill/dist/quill.bubble.css";
+import { Button } from "react-bootstrap";
+import './styles.scss'
 
 export default class NewStory extends Component {
   state = {
@@ -33,6 +35,7 @@ export default class NewStory extends Component {
           onChange={this.onChange}
           placeholder="Tell your story..."
         />
+        <Button variant="success" className="post-btn">Post</Button>
       </Container>
     );
   }
