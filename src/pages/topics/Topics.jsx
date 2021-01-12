@@ -8,9 +8,9 @@ import topics from './data'
 export default class Topics extends React.Component {
   render = () => (
     <Container id="topics-page">
-      <Row>
+      <CategoriesBar />
+      <Row className="px-3">
         <Col xs={12}>
-          <CategoriesBar />
           <h2>Explore Topics</h2>
           
         </Col>
